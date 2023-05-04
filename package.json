@@ -23,6 +23,9 @@
     "mongoose",
     "express"
   ],
+  "engines": {
+    "node": ">=14.20.0"
+  },
   "license": "MIT",
   "author": {
     "name": "Moses Oyet David",
