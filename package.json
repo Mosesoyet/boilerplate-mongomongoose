@@ -10,7 +10,9 @@
     "body-parser": "^1.15.2",
     "dotenv": "^8.2.0",
     "express": "^4.12.4",
-    "mongoose": "^5.11.15"
+    "mongodb": "^3.0.0",
+    "mongoose": "^5.11.15",
+    "package.json": "^2.0.1"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,17 @@
     "mongoose",
     "express"
   ],
-  "license": "MIT"
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Moses Oyet David",
+    "contacts": [
+      {
+        "email": "trickmaxllar@gmail.com",
+        "tel": "0925940764"
+      }
+    ]
+  }
 }
