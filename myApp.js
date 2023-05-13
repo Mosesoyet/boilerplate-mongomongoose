@@ -5,14 +5,9 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 // create a person schema
 var personSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
-  },
+  name: String,
   age: Number,
-  favoriteFoods: [
-    String
-  ]
+  favoriteFoods: [String]
 })
 
 
