@@ -18,13 +18,12 @@ var personSchema = new mongoose.Schema({
 
 var Person = mongoose.model("Person", personSchema);
 
-var moses = new Person({
-  name: "Moses Oyet David",
-  age: 23,
-  favoriteFoods: ["Banana","Beans"]
-})
-
 const createAndSavePerson = (done) => {
+  var moses = new Person({
+    name: "Moses Oyet David",
+    age: 23,
+    favoriteFoods: ["Banana","Beans"]
+  })
   moses.save(function(err, data) {
     if(err) return console.log(err)
     done(null, data)
