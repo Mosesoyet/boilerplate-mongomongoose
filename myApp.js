@@ -20,7 +20,7 @@ let Person = mongoose.model("Person", personSchema);
 
 
 
-const createAndSavePerson = () => {
+const createAndSavePerson = (done) => {
   let moses = new Person({
     name: "Moses Oyet",
     age: 23,
