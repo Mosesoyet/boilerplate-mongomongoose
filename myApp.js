@@ -26,6 +26,10 @@ const createAndSavePerson = (done) => {
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
+  arrayOfPeople = [
+    {name: "James Olaa", age: 20, favoriteFoods: ["beans", "beef"]},
+    {name: "Viola Juan", age: 21, favoriteFoods: ["Chicken","RIce"]}
+  ]
   Person.create(arrayOfPeople).then(done(null , data)).catch(err => {
     console.log(err)
   });
